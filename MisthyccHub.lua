@@ -9,7 +9,7 @@ local lp = player  -- Alias for compatibility
 
 local Whitelist = {
     "Souleykk27",
-    "personne",
+    "tropmignon44",
     "personne",
     "personne",
     "personne",
