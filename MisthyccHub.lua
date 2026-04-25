@@ -1,84 +1,3 @@
-local Players = game:GetService("Players")
-local StarterGui = game:GetService("StarterGui")
-local UserInputService = game:GetService("UserInputService")
-local VirtualInputManager = game:GetService("VirtualInputManager")
-local TextService = game:GetService("TextService")
-
-local player = Players.LocalPlayer
-local lp = player  -- Alias for compatibility
-
-local Whitelist = {
-    "Souleykk27",
-    "tropmignon44",
-    "Louis59fisch",
-    "Louisrodrigues321",
-    "Amirbosse564222",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne",
-    "personne"
-}
-
-local function isWhitelisted(name)
-    name = name:lower()
-    for _, v in ipairs(Whitelist) do
-        if name == v:lower() then
-            return true
-        end
-    end
-    return false
-end
-
-if not isWhitelisted(player.Name) and not isWhitelisted(player.DisplayName) then
-    player:Kick("Not whitelisted")
-    return
-end
 if not game:IsLoaded() then game.Loaded:Wait() end
 pcall(function() game:GetService("Players").RespawnTime = 0 end)
 local privateBuild = false
@@ -6841,9 +6760,9 @@ task.spawn(function()
 
     local title = Instance.new("TextLabel", topBar)
     if privateBuild then
-        title.Text = "MISTHYCCHUB PRIVATE"
+        title.Text = "MisthyccHUB PRIVATE"
     else
-        title.Text = "FLOWZHUB"
+        title.Text = "MisthyccHUB"
     end
     title.Font = Enum.Font.GothamBlack
     title.TextSize = 20*SCALE
