@@ -1,12 +1,3 @@
-local Players = game:GetService("Players")
-local StarterGui = game:GetService("StarterGui")
-local UserInputService = game:GetService("UserInputService")
-local VirtualInputManager = game:GetService("VirtualInputManager")
-local TextService = game:GetService("TextService")
-
-local player = Players.LocalPlayer
-local lp = player  -- Alias for compatibility
-
 local Whitelist = {
     "Souleykk27",
     "tropmignon44",
