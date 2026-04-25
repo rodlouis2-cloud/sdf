@@ -11,7 +11,7 @@ local Whitelist = {
     "Souleykk27",
     "tropmignon44",
     "Louis59fisch",
-    "personne",
+    "Louisrodrigues321",
     "personne",
     "personne",
     "personne",
@@ -212,7 +212,7 @@ local DefaultConfig = {
         CloneKey       = "V",
         TpOnLoad       = false,
         MinGenForTp    = "",
-        CarpetSpeedKey = "W",
+        CarpetSpeedKey = "Q",
         InfiniteJump   = false,
     },
     StealSpeed   = 20,
@@ -252,7 +252,7 @@ local DefaultConfig = {
     ProximityRange = 15,
     StealSpeedKey = "C",
     ShowInvisPanel = true,
-    ResetKey = "m",
+    ResetKey = "X",
     AutoResetOnBalloon = false,
     AntiBeeDisco = false,
     AutoDestroyTurrets = false,
@@ -480,16 +480,15 @@ local function triggerClosestUnlock(yLevel, maxY)
 end
 
 local Theme = {
-    Background      = Color3.fromRGB(15, 15, 20),
-    Surface         = Color3.fromRGB(22, 22, 30),
-    SurfaceHighlight= Color3.fromRGB(35, 35, 45),
-    Accent1         = Color3.fromRGB(0, 225, 255),
-    Accent2         = Color3.fromRGB(180, 0, 255),
-    TextPrimary     = Color3.fromRGB(240, 240, 240),
-    TextSecondary   = Color3.fromRGB(140, 140, 150),
-    Success         = Color3.fromRGB(30, 150, 90),
-    Error           = Color3.fromRGB(255, 60, 80),
-}
+    Background      = Color3.fromRGB(0, 0, 0),         
+    Surface         = Color3.fromRGB(20, 20, 25),       
+    SurfaceHighlight= Color3.fromRGB(35, 30, 40),       
+    Accent1         = Color3.fromRGB(255, 20, 147),   
+    Accent2         = Color3.fromRGB(255, 105, 180),    
+    TextPrimary     = Color3.fromRGB(255, 240, 245),   
+    TextSecondary   = Color3.fromRGB(200, 180, 190),    
+    success         = Color3.fromRGB(255, 20, 147),     
+    Error           = Color3.fromRGB(255, 0, 100),      
 
 local PRIORITY_LIST = {
    "Strawberry Elephant",
@@ -3455,7 +3454,7 @@ end
                         uName.Font = Enum.Font.GothamBold
                         uName.TextSize = 11
                     else
-                        uName.Text = "âš ï¸  STEALING"
+                        uName.Text = "⚠️ STEALING"
                         uName.TextColor3 = Color3.fromRGB(255, 150, 0)
                         uName.Font = Enum.Font.GothamBold
                         uName.TextSize = 11
@@ -3477,10 +3476,10 @@ end
         btnCont.ZIndex = 10
 
         local buttonsDef = {
-            {icon = "ðŸš€", cmd = "rocket"},
-            {icon = "ðŸ ƒ", cmd = "ragdoll"},
-            {icon = "ðŸ”’", cmd = "jail"},
-            {icon = "ðŸŽˆ", cmd = "balloon"}
+            {icon = "🚀", cmd = "rocket"},
+            {icon = "🏃", cmd = "ragdoll"},
+            {icon = "🔒", cmd = "jail"},
+            {icon = "🎈", cmd = "balloon"}
         }
 
         for i, def in ipairs(buttonsDef) do
@@ -4264,7 +4263,7 @@ if IS_MOBILE then
     resetBtn.Position = UDim2.new(1, -58, 1, -105)
     resetBtn.BackgroundColor3 = Color3.fromRGB(255, 150, 50)
     resetBtn.AutoButtonColor = false
-    resetBtn.Text = "ðŸ”§"
+    resetBtn.Text = "🔧"
     resetBtn.Font = Enum.Font.GothamBlack
     resetBtn.TextSize = 20
     resetBtn.TextColor3 = Color3.new(0, 0, 0)
@@ -4309,7 +4308,7 @@ if IS_MOBILE then
     openBtn.Position = UDim2.new(1, -58, 1, -58)
     openBtn.BackgroundColor3 = Theme.Accent1
     openBtn.AutoButtonColor = false
-    openBtn.Text = "âš™"
+    openBtn.Text = "⚙"
     openBtn.Font = Enum.Font.GothamBlack
     openBtn.TextSize = 20
     openBtn.TextColor3 = Color3.new(0, 0, 0)
@@ -7391,7 +7390,7 @@ task.spawn(function()
             upBtn.Position = UDim2.new(1, -100, 0.5, 0)
             upBtn.AnchorPoint = Vector2.new(0, 0.5)
             upBtn.BackgroundColor3 = Theme.Accent1
-            upBtn.Text = "â†‘"
+            upBtn.Text = "↑"
             upBtn.Font = Enum.Font.GothamBold
             upBtn.TextSize = 12
             upBtn.TextColor3 = Color3.new(0, 0, 0)
@@ -7402,7 +7401,7 @@ task.spawn(function()
             downBtn.Position = UDim2.new(1, -70, 0.5, 0)
             downBtn.AnchorPoint = Vector2.new(0, 0.5)
             downBtn.BackgroundColor3 = Theme.Accent1
-            downBtn.Text = "â†“"
+            downBtn.Text = "↓"
             downBtn.Font = Enum.Font.GothamBold
             downBtn.TextSize = 12
             downBtn.TextColor3 = Color3.new(0, 0, 0)
