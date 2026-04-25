@@ -1,9 +1,18 @@
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
+local UserInputService = game:GetService("UserInputService")
+local VirtualInputManager = game:GetService("VirtualInputManager")
+local TextService = game:GetService("TextService")
+
+local player = Players.LocalPlayer
+local lp = player  -- Alias for compatibility
+
 local Whitelist = {
     "Souleykk27",
     "tropmignon44",
     "Louis59fisch",
     "Louisrodrigues321",
-    "Aura4000000",
+    "Amirbosse564222",
     "personne",
     "personne",
     "personne",
@@ -471,15 +480,16 @@ local function triggerClosestUnlock(yLevel, maxY)
 end
 
 local Theme = {
-    Background      = Color3.fromRGB(0, 0, 0),         
-    Surface         = Color3.fromRGB(20, 20, 25),       
-    SurfaceHighlight= Color3.fromRGB(35, 30, 40),       
-    Accent1         = Color3.fromRGB(255, 20, 147),   
-    Accent2         = Color3.fromRGB(255, 105, 180),    
-    TextPrimary     = Color3.fromRGB(255, 240, 245),   
-    TextSecondary   = Color3.fromRGB(200, 180, 190),    
-    success         = Color3.fromRGB(255, 20, 147),     
-    Error           = Color3.fromRGB(255, 0, 100),      
+    Background      = Color3.fromRGB(15, 15, 20),
+    Surface         = Color3.fromRGB(22, 22, 30),
+    SurfaceHighlight= Color3.fromRGB(35, 35, 45),
+    Accent1         = Color3.fromRGB(0, 225, 255),
+    Accent2         = Color3.fromRGB(180, 0, 255),
+    TextPrimary     = Color3.fromRGB(240, 240, 240),
+    TextSecondary   = Color3.fromRGB(140, 140, 150),
+    Success         = Color3.fromRGB(30, 150, 90),
+    Error           = Color3.fromRGB(255, 60, 80),
+}
 
 local PRIORITY_LIST = {
    "Strawberry Elephant",
@@ -6833,7 +6843,7 @@ task.spawn(function()
     if privateBuild then
         title.Text = "MISTHYCCHUB PRIVATE"
     else
-        title.Text = "MISTHYCCHUB"
+        title.Text = "FLOWZHUB"
     end
     title.Font = Enum.Font.GothamBlack
     title.TextSize = 20*SCALE
